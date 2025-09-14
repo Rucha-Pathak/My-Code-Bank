@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class Product {
     int id;
     String name;
@@ -44,15 +46,37 @@ class Product {
 
 class Test {
     public static void main(String[] args) {
+
         Product p1 = new Product();
         p1.setId(101);
         p1.setName("Laptop");
         p1.setQuantity(5);
         p1.setPrice(55000);
         p1.display();
-        System.out.println("ID: " + p1.getId());
-        System.out.println("Name: " + p1.getName());
-        System.out.println("Quantity: " + p1.getQuantity());
-        System.out.println("Price: " + p1.getPrice());
+	
+	Scanner sc = new Scanner(System.in);
+
+	Product p2 = new Product();
+
+	System.out.println("enter id :");
+	int i = sc.nextInt();
+	sc.nextLine();s
+
+	System.out.println("enter name :");
+	String n = sc.nextLine();
+
+	System.out.println("enter quantity :");
+	int q = sc.nextInt();
+
+	System.out.println("enter price :");
+	double p = sc.nextDouble();
+	
+	p2.setId(i);
+        p2.setName(n);
+        p2.setQuantity(q);
+        p2.setPrice(p);
+        p2.display();
+
+
     }
 }

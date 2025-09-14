@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class Student {
     int rollNo;
     String name;
@@ -39,8 +41,29 @@ class Test {
         s1.setName("Rucha");
         s1.setMarks(92.5);
         s1.display();
-        System.out.println("Roll No: " + s1.getRollNo());
-        System.out.println("Name: " + s1.getName());
-        System.out.println("Marks: " + s1.getMarks());
+
+        Scanner sc = new Scanner(System.in);
+
+	Student s2 = new Student();
+
+	System.out.println("Enter roll no: ");
+	int r = sc.nextInt();
+	sc.nextLine();
+
+	System.out.println("Enter name: ");
+	String n = sc.nextLine();
+
+	System.out.println("Enter marks: ");
+	double m = sc.nextDouble();
+	
+	s2.setRollNo(r);
+        s2.setName(n);
+        s2.setMarks(m);
+	s2.getRollNo();
+	s2.getRollNo();
+        s2.display();
+
+
+
     }
 }

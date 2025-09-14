@@ -68,10 +68,10 @@ class Test {
 	String n = sc.nextLine();
 
 	System.out.println("Enter salary: ");
-	double s = nextDouble();
+	double s = sc.nextDouble();
 
 	System.out.println("Enter allowance: ");
-	double a = nextDouble();
+	double a = sc.nextDouble();
 
 	a2.setId(i);
         a2.setName(n);
@@ -81,7 +81,7 @@ class Test {
 	a2.getName();
 	a2.getSalary();
 	a2.getAllowance();
-	a1.display();
+	a2.display();
 	
 	
 
